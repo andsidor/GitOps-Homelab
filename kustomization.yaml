@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deployment.yaml
+  - service.yaml
+  # - deployment.yaml
+  # - service.yaml
+
+# Uncomment and edit the following as needed:
+
+# namePrefix: my-
+# nameSuffix: -dev
+
+# commonLabels:
+#   app: my-app
+
+# images:
+# - name: my-image
+#   newTag: latest
+
+# patchesStrategicMerge:
+# - patch.yaml
+
+# configMapGenerator:
+# - name: my-config
+#   files:
+#   - config.properties
